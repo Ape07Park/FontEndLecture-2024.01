@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--모든 태그는 박스형 형태로 구성
+        모든 태그는 display style 속성 있음
+        display: 어떻게 보일 것인가 속성. inline과 block 있음
+
+        block : <div>, <p>, <h>, <ol>, <ul>, <form> 등
+
+        * block 특징: 1) 해당 라인의 모든 너비를 차지 따라서 가로 길이 화면 끝
+        2) 해당 태그를 감싼 태그 넓이와 동일
+        3) 언제나 새로운 라인에서 시작(항상 다음줄)
+    -->
+
+    <p style="background-color: aqua;"> p 태그는 display 속성값이 블록임. 1</p>
+    <p> p 태그는 display 속성값이 블록임. 2</p>
+
+    <!--
+        inline: <sapn>, <a>, <img>, <b>, <i> 등
+            특징 1) 해당 HTML 요소의 "내용"만큼의 넓이 차지
+            2) 새로운 라인에서 시작 X. 차곡차곡 쌓임
+            3) 화면 넘어가면 자동으로 내려감
+    -->
+    
+    <a href="#"> a 태그는 display 속성값이 인라인임.1</a>
+    <a href="#"> a 태그는 display 속성값이 인라인임.2</a>
+    
+    <br/>
+
+    <input type="text"/>
+    <span style="border: 3px solid red;"> <!-- 경계선 3px로 실선으로 -->
+         span 태그는 display 속성값이 인라인3
+    </span>
+
+    <!--div: 블록태그면서 HTML 태그들을 여러 개 묶을때 사용-->
+    <div style="background-color: goldenrod; color: green">
+        <h1>블록태그 연습</h1>
+        <p>여러 요소들을 div 태그로 묶어서 표현</p>
+    </div>
+
+    <hr/>
+    <div style="background-color: goldenrod; color: green; width: 500px; display: inline-block;">
+        <h1>블록태그 연습 블록태그 연습 블록태그 연습 블록태그 연습</h1>
+        <p>여러 요소들을 div 태그로 묶어서 표현</p>
+    </div>
+
+    
+    <div style="background-color: goldenrod; color: red; width: 500px; display: inline-block">
+        <h1>블록태그 연습 블록태그 연습 블록태그 연습 블록태그 연습</h1>
+        <p>여러 요소들을 div 태그로 묶어서 표현</p>
+    </div>
+
+    <!-- block 와 inline 장점을 같이 사용할수있는 속성
+        display : inline-block
+        block : 높이와 너비를 지정 / inline : 불가
+        block : 무조건 새로운 라인 / inline : 너비에 맞춰서 라인 생성
+
+        inline-block : 높이와 너비를 지정하면서 너비에 맞춰서 라인 생성
+    -->
+
+    <!--
+        상상:태그가 2개 있음
+        inline + inline : 가로 2개 세팅
+        block + block : 세로 2개 세팅
+        inline + block : 세로로 2개 세팅
+        block + inline : 세로 2개 세팅
+        inline + inline-block : 가로 2
+        block + inline-block: 세로 2
+        inline-block + inline-block: 가장 좋음, 많이 사용
+    -->
+
+    <p style="background-color: goldenrod; color: green">
+    </p>
+
+    <hr/>
+
+    <a href="#"> a 태그는 display 속성값이 인라인임.1</a>
+    <p> 여러 요소들을 div태그로 묶어서 표현</p>
+
+
+
+
+
+</body>
+</html>

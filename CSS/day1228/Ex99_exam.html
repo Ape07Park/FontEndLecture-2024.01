@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      #whole {
+        border: 1px solid black;
+        padding: auto;
+      }
+
+      h1 {
+        font-size: 200%;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 120%;
+      }
+
+      div {
+        padding: 15px;
+      }
+
+      #top {
+        margin-left: 40px;
+      }
+
+      /* ------------- */
+
+      #semitop {
+        padding: 15px;
+        border: 1px solid gray;
+      }
+
+      div div > div {
+        float: right;
+      }
+
+      select {
+        margin: 15px;
+      }
+
+      /* ------------- */
+      #content {
+        display: inline-block;
+      }
+      /* ------ */
+      #footer {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="whole">
+      <div id="top">
+        <h1>HTML5 Example</h1>
+        <h3>한빛</h3>
+      </div>
+
+      <div id="semitop">
+        <select>
+          <option>HTML</option>
+        </select>
+
+        <select>
+          <option>CSS</option>
+        </select>
+
+        <select>
+          <option>JS</option>
+        </select>
+
+        <div>
+          <input type="text" />
+          <input type="submit" value="검색" />
+        </div>
+      </div>
+
+      <div id="content">
+        <h1>html5 개요</h1>
+        <br />
+        <h3>2019</h3>
+        <br />
+        <img src="/CSS/day1226/Test.jpg" alt="없음" width="480" height="280" />
+        <br />
+        <p>테스트 데이터</p>
+      </div>
+
+      <div id="footer">footer</div>
+    </div>
+  </body>
+</html>

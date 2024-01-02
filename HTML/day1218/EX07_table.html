@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        <table></table> : 테이블을 구성하기 위한 가장 큰 범위 태그
+        <tr><tr> : 가로 만드는 태그 ()
+        <td></td> : 셀(칸)을 만드는 태그 ()/ 보통글씨 크기 왼쪽 정렬
+        
+        * <th></th> : 표의 제목을 만드는 태그/굵은글씨 크기 가운데 정렬 (td 대신 사용 )
+    -->
+
+    <!--border = "1": 테이블 윤곽선 두께-->
+    <table border="1">
+        <tr>
+            <th>11111</th>
+            <th>22222</th> 
+        </tr>
+        
+        <tr>
+            <td>333333333</td>
+            <td>444444444</td>
+        </tr>
+         </table>
+
+    <table border="1">
+        <tr>
+            <th>언어</th>
+            <th>난이도</th>
+            <th>학습기간</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>하</td>
+            <td>1주</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>중</td>
+            <td>1주</td>
+        </tr>
+
+        <tr>
+            <td>JS</td>
+            <td>상</td>
+            <td>2주</td>
+        </tr>
+    </table>
+
+    <!--    
+     shift + alt + 화살표 : 한줄 복사
+     shift + tap: 왼쪽으로 4칸 이동
+     alt + 위, 아래 : 위와 아래 or 아래 위치 바꿈/ 위로, 아래로 이동
+     alt + shift : 왼쪽으로 4칸 이동
+     ctrl + / : 주석 만들기, 풀기
+     ctrl + x : 잘라내기
+     ctrl + y : 되돌리기 한 걸 다시 복구
+     shift + home키 : 커서 기준 왼쪽으로 선택
+     shift + end키 : 커서 기준 오른쪽로 선택
+
+    -->
+
+    <hr>
+    <!--테이블 병합
+        colspan 열 합치기 : 가로 열병합
+        rowspan 행 합치기 : 세로 열병합
+    
+    -->
+    <table border = "1">
+        <tr>
+            <td colspan="2">1</td> <!--가로로 두 칸 차지해라-->
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <table border = "1">
+        <tr>
+            <td rowspan="2">1</td>  <!--세로로 두 칸 차지해라-->
+            <td>2</td>
+            
+        </tr>
+        <tr>
+            
+            <td>4</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

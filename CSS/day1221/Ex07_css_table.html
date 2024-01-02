@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ol, ul{
+           
+            list-style-type: lower-roman;
+            border: 1px solid black;
+            background-color: darkseagreen;
+
+            /* 디자인 상 들여쓰기가 기본값 따라서 padding으로 들여쓰기 조절 */
+            padding: 0px;
+        }
+
+        li{
+            border: 1px solid red;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: separate; 
+            /* collapse: 합치기, separate: 분리 */
+            border-spacing:20px 30px;
+            width: 50%;
+            height: 300px;
+            /* 높이, 넓이는 고정할 시 문제되는 경우 존재 따라서 내용에 따라 조절 */
+            
+        }
+    
+
+        tr{
+            border: 1px solid red;
+        }
+
+        td{
+            border: 1px solid blue;
+            text-align: center; /* 가로 정렬*/
+            vertical-align: bottom; /* 세로 정렬*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>바나나</li>
+        <li>수박</li>
+    </ol>
+    
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>400</td>
+        </tr>
+    </table>
+</body>
+</html>

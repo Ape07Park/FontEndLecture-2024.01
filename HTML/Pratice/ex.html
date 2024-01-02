@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>회원가입</legend>
+
+        <ol>
+          <li>이름 <input type="text" required placeholder="이름" /></li>
+
+          <li>
+            성별 <input type="radio" name="gender" id="man" />
+            <label for="man">남성</label>
+            <input type="radio" name="gender" id="woman" />
+            <label for="woman">여성</label>
+          </li>
+
+          <li>
+            직업
+            <select>
+              <option>교사</option>
+              <option selected>프로그래머</option>
+              <option>학생</option>
+            </select>
+          </li>
+
+          <li>
+            <input type="checkbox" id="sleep" />
+            <label for="sleep">자기</label>
+            <input type="checkbox" id="eat" />
+            <label for="eat">먹기</label>
+            <input type="checkbox" id="medi" />
+            <label for="medi">명상하기</label>
+          </li>
+
+          <li>
+            <input type="submit" value="확인" />
+            <input type="reset" value="취소" />
+          </li>
+
+          <li><textarea cols="30" rows="10" required></textarea></li>
+
+          <li>빈값: <input type="text" /></li>
+
+          <li>사이즈: <input type="text" style="width: 400px" /></li>
+
+          <li>초기값: <input type="text" readonly value="초기값" /></li>
+
+          <li>입력한계: <input type="text" maxlength="5" /></li>
+
+          <li>미사용: <input type="text" disabled /></li>
+        </ol>
+      </fieldset>
+    </form>
+  </body>
+</html>

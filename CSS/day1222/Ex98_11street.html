@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #main{
+            border: 1px solid black;
+            width: 600px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #banner{
+            text-align: center;     
+        }
+
+        #id_password{
+            margin-left:130px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }       
+        
+        .one{
+            width: 330px;
+            height: 40px;
+            font-size: large;
+        }
+
+        #login{
+            background-color: red;
+            color: white;
+            width: 310px;
+            padding: 20px;
+            font-size: large;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 128px;
+        }
+
+        #log{
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        #loginStay{
+            padding: 10px;
+            margin-left: 110px;
+        }
+
+        .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.35);
+        font-size: 12px;
+        margin: 8px 0px;
+        margin-bottom: 30px;
+      }
+      .hr-sect::before,
+      .hr-sect::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 8px; /* 마진 값으로 선길이 조절*/
+      }
+
+      #snsLogin{
+        margin-left: 190px;
+      }
+
+      #snsLogin2{
+        margin-left: 160px;
+      }
+
+      .iagCol{
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      #join{
+        margin-top: 30px;
+        text-align: center;
+        text-decoration: none; 
+      }
+
+      .joinLang{
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      #adver{
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .copyright{
+        text-decoration: none;
+        color: #949494;
+        line-height: 18px;
+        text-align: center;
+      }
+
+      #footer{
+        text-decoration: none;
+        color: #949494;
+        line-height: 18px;
+        text-align: center;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id="banner">
+            <img src="/CSS/day1222/img/11st.svg">
+        </div>
+        
+        <div id="id_password">
+            <input type="text" class="one" placeholder="아이디 입력" />
+            <br/>
+            <input type="text" class="one" placeholder="비밀번호 8 ~ 20자"/>
+        </div>
+
+        <div id="login">
+            <a href="#" id="log">로그인</a>
+        </div>
+
+        <div id="loginStay">
+            <input type="radio"> 로그인 상태 유지
+        </div>
+
+        <div class="hr-sect">또는 SNS 아이디로 로그인</div> 
+          
+
+        <div id="snsLogin">  
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-kakao.svg" alt="사진 X">
+            </a>
+
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-naver.svg" alt="사진 X">
+            </a>
+
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-tid.svg" alt="사진 X">
+            </a>
+        </div>
+
+        <div id="snsLogin2">
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-apple.svg" alt="사진 X">
+            </a>
+
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-payco.svg" alt="사진 X">
+            </a>
+
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-facebook.svg" alt="사진 X">
+            </a>
+            
+            <a href="#" class="iagCol">
+                <img src="/CSS/day1222/img/sns-phone.svg" alt="사진 X">
+            </a>
+        </div>
+    </div>
+
+    <div id="join">  <!--회원 가입-->
+        <a href="#" class="joinLang">아이디 찾기</a>
+        <a href="#" class="joinLang">비번 찾기</a>
+        <a href="#" class="joinLang">비회원 주문조회</a>
+        <a href="#" class="joinLang">회원가입</a>
+    </div>   
+
+    <div> <!-- 그림 -->
+        <a href="#" id="adver">
+            <img src="/CSS/day1222/img/banner.png" alt="X" width="640px">
+        </a>
+    </div>
+
+    <p class="copyright"> <!-- 카피라이트--> 
+        Copyright ©
+        <a href="#" id="footer">11street Co.ltd.</a> 
+        ALL RIGHT Reserved.
+    </p>
+
+</body>
+</html>

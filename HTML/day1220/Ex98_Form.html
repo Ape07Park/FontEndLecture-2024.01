@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+
+            1. 아이디
+            <input type="text" placeholder="이름 입력" required/>
+            
+            <br/>
+            2. 비밀번호 
+            <input type="password" id="pass" required/>
+
+            <br/>
+            3. 비밀번호 확인
+            <input type="password" id="pass" required/>
+
+            <br/>
+            4. 회원 등급
+            <input type="text" value="준회원"/>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+
+            1. 이름
+            <input type="text" placeholder="5자 미만 공백없이" style="-ms-ime-mode: active;" maxlength="4" required/>
+
+            <br/>
+            2. 메일 주소
+            <form id="myform" action="#">
+                <input type="text" id="email" placeholder="aaa@daum.com"/>
+
+            </form>
+
+            <script>
+                // 자바스크립트
+                document.querySelector("#myform").addEventListener("submit", function(e){ 
+            
+                var email = document.querySelector("#email");
+                var isValidate = false;
+                var regexp =/[a-z]+[a-z0-9]*\.?[a-z0-9]*@[a-z0-9]+\.?[a-z0-9]*/i;
+            
+                if(!regexp.test(email.value)){
+                    alert("이메일 형식이 다릅니다.");
+                }
+            
+                });
+            </script>
+            
+            <br/>
+            3. 연락처
+            <input type="text" pattern="(010)-\d{4}-\d{4}"/>
+
+            <br/>
+            4. 생일
+            <input type="date"/>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>코딩 숙련도(상,중,하)</legend>
+            <input type="range" min="0" max="2" step="1" list="tickmarks"/>
+            <datalist id="tickmarks">
+                <!-- id와 리스트가 동일해야 함-->
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </datalist>
+            
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <input type="submit"/>
+        </fieldset>
+    </form>
+</body>
+</html>
