@@ -124,7 +124,73 @@ Date:   Sun Jan 7 15:51:56 2024 +0900
  test.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
 
+ C:\Users\ape07\Desktop\Test>git status
+ >>>>
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+        new file:   test2.txt
 
- 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed) // git add <file>로 커밋
+  (use "git restore <file>..." to discard changes in working directory) // git restore <file>로 작업한 거 변경 취소
+        modified:   test.txt
+        modified:   test2.txt
+
+C:\Users\ape07\Desktop\Test>git restore test.txt
+>>>> 
+성공하면 아무 것도 안뜸
+
+C:\Users\ape07\Desktop\Test>git add test2.txt
+
+C:\Users\ape07\Desktop\Test>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+        new file:   test2.txt
+
+C:\Users\ape07\Desktop\Test>git restore --staged test.txt // 마지막에 한 커밋 취소
+
+C:\Users\ape07\Desktop\Test>git status
+>>>>
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+Changes not staged for commit: //커밋 취소 됨
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt 
+
+C:\Users\ape07\Desktop\Test>git commit -am "hi3"
+[master 70d7fc9] hi3
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 test3.txt
+
+C:\Users\ape07\Desktop\Test>git log
+commit 70d7fc99e37176bbf22f438b65ed0d8c9399e8a9 (HEAD -> master)
+Author: Ape07Park <ape072399@gmail.com>
+Date:   Sun Jan 7 17:04:17 2024 +0900
+
+    hi3
+
+commit 5313b1d4541647b18f0d5e750b3e19bb13da1696
+Author: Ape07Park <ape072399@gmail.com>
+Date:   Sun Jan 7 15:59:59 2024 +0900
+
+    hi2
+
+commit c331e0245ef449aecdba7623689b63ea6ad6abe6
+Author: Ape07Park <ape072399@gmail.com>
+Date:   Sun Jan 7 15:51:56 2024 +0900
+
+    hi
+
+
+
+
  */
 
