@@ -78,3 +78,19 @@ person.sort((a,b) => b.age - a.age);
 console.log(person);
 
 // 3-7 slice() 
+console.log(fruits.slice(0,2));
+console.log(fruits)
+
+// 4. 응용
+// 4-1 문자열 뒤집기
+// 1) array로 만들기 2) reverse 3) join
+let str = "Hello Javascript";
+console.log(str.split('').reverse().join('')); // 뛰어쓰기 형태로 분리 
+
+// 4-2 어떤 문자열이 회문(palindrome)인가?
+function isPalindrome(str){
+    let reverseStr = str.split('').reverse().join('')
+    return str == reverseStr;
+}
+console.log(isPalindrome('우영우'));
+console.log(isPalindrome('소주 만병만 주소'));
