@@ -2,13 +2,18 @@
 // 생년, 월, 일, 변수로 설정해서 풀기 
 
 // 오늘 - 생일 
-var TodayYear =2024, TodayMonth = 1, TodayDay = 5;
 
 // year끼리는 빼기, month끼리도 뺴기/ 
 // 근데 오늘 월이 생월보다 작으면 -1. 
 // 월이 같고 오늘 일이 생일보다 작으면 -1
 
-function age_test(my_year, my_month, my_Day){
+function AgeCalculator(my_year, my_month, my_Day){
+    //오늘 년, 월, 일 불러오기
+    let TodayYear = new Date().getFullYear();
+    let TodayMonth = new Date().getMonth() + 1;
+    let TodayDay = new Date().getDay();
+    
+    // 나이 계산
     let age = TodayYear - my_year;
     if(TodayMonth < my_month){
         age -= 1;
@@ -20,7 +25,7 @@ function age_test(my_year, my_month, my_Day){
     return age;
 }
 
-console.log(age_test(1999,1,1));
+console.log(AgeCalculator(1999,7,20));
 
 // 2. 백준 31090. N년과 N+1년이 이러한 조건을 만족하는 관계인지 판별
 // N+1을 N 끝의 2자리로 나누어 떨어져 함 
@@ -31,7 +36,7 @@ console.log(age_test(1999,1,1));
 */
 
 // 2023 % 100 = 23 
-function year_test(N){
+function isDivisible(N){
     let x = N % 100;
     if((N + 1) % x == 0){
         console.log("good");
@@ -39,8 +44,8 @@ function year_test(N){
         console.log("bye");
     }
 }
-for(let i=1980; i <= 2030; i++){
-    year_test(i)
+for(let i=2023; i <= 2040; i++){
+    isDivisible(i)
 }
 
 /* 3. array를 매개변수로 받아 합의 제곱과 제곱의 합의 차이를 
@@ -70,4 +75,7 @@ function double_sum(array){
     return sum;
 }
 
-console.log( double_sum(array));
+console.log(double_sum(array));
+
+// 3) 합의 제곱 - 제곱의 합
+console.log(sum_double(array) - double_sum(array)) 
