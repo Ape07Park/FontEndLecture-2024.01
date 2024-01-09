@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+//정수 두 개를 입력 받아. 
+//(첫 번째 입력 값의 범위는 1~20, 두 번째 입력 값의 범위는 10~30이며.
+//첫 번째 입력 값은 두 번째 입력 값보다 4 이상 작아야 합니다.).  
+// 첫 번째 정수부터 두 번째 정수까지를 지수로 하는 2의 거듭제곱 배열을 출력하는 프로그램을 만드세요.
+
+            function calculator() {
+            let int1 = document.getElementById("int1").value;
+            let int2 = document.getElementById("int2").value;
+            // 이 문서에서.id로. 요소를. 받겠다. 괄호안의. 값을. 그런데 그 값을 int1에 넣겠다    
+            
+            if(int1 >= (int2 - 4)){
+                return null;
+            }else if( int1 > 20 || int1 < 1){
+                alert("int1은 1 ~ 20 사이")
+                return null
+            }else if(int2 > 30 || int2 < 10){
+                alert("int2은 10 ~ 30 사이")
+                return null
+            } 
+            let sum = [];
+            for(let i = int1; i <= int2; i++){
+                    sum.push(2 ** i);
+            }
+            //  출력할 장소 필요 
+            document.body.innerHTML = sum;
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="int1" placeholder="1번 정수 입력">
+    <input type="text" id="int2" placeholder="2번 정수 입력">
+    <button onclick="calculator()">출력</button>
+</body>
+</html>
