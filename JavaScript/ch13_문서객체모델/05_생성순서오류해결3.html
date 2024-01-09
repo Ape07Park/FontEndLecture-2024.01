@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handler(){
+        document.querySelector('h1').style.backgroundColor = "yellow"; // body 없어서 실행 x
+        document.querySelector('h2').style.color = 'red';
+        }
+        window.onload = handler; // event handler 등록작업, ()가 없음
+       
+    </script>
+</head>
+<body onload="handler()">
+    <h1>header1</h1>
+    <h2>header1</h2>
+</body>
+</html>

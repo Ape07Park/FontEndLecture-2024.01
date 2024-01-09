@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeText(){
+            let header = document.getElementById('header');
+            let originalText = header.innerHTML;
+            header.innerHTML = "JS로 변경<br>";
+            header.innerHTML += `원랜 "${originalText}" 이었음`;
+        }
+        function escapeText(){
+            let header = document.getElementById('header');
+            header.innerHTML = "<i> i태그 임</i></br>";
+            header.innerHTML += "&lt; i&gt;i태그 임&lt; i&gt;i</br>";
+        }
+    </script>
+</head>
+<body style="margin: 50px">
+    <h1 id="header">header 1</h1>
+    <button onclick="changeText()">문자변경</button>
+    <button onclick="escapeText()">escape 문자변경</button>
+    
+</body>
+</html>
